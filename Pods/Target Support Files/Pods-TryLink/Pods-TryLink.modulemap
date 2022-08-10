@@ -1,0 +1,6 @@
+framework module Pods_TryLink {
+  umbrella header "Pods-TryLink-umbrella.h"
+
+  export *
+  module * { export * }
+}
