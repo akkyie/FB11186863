@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		53E94FB833F78C6FC7608626 /* Pods_TryLinkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434B662633E8995403097B03 /* Pods_TryLinkTests.framework */; };
-		A85ACCF1283908FD1C2A24DB /* Pods_TryLink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040D7B2390B15CEB2B120C70 /* Pods_TryLink.framework */; };
+		E906374628A3C95A00ACCF97 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E906374528A3C95A00ACCF97 /* RxSwift.framework */; };
+		E906374728A3C95A00ACCF97 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E906374528A3C95A00ACCF97 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E99AB58D28A396EF00F2E294 /* TryLinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99AB58C28A396EF00F2E294 /* TryLinkApp.swift */; };
 		E99AB58F28A396EF00F2E294 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99AB58E28A396EF00F2E294 /* ContentView.swift */; };
 		E99AB59128A396F300F2E294 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E99AB59028A396F300F2E294 /* Assets.xcassets */; };
@@ -26,13 +26,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E906374828A3C95A00ACCF97 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E906374728A3C95A00ACCF97 /* RxSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		03EB5FC6FE2673C1E548FB0B /* Pods-TryLinkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TryLinkTests.debug.xcconfig"; path = "Target Support Files/Pods-TryLinkTests/Pods-TryLinkTests.debug.xcconfig"; sourceTree = "<group>"; };
-		040D7B2390B15CEB2B120C70 /* Pods_TryLink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TryLink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		15BF12868A6A62D79757649B /* Pods-TryLinkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TryLinkTests.release.xcconfig"; path = "Target Support Files/Pods-TryLinkTests/Pods-TryLinkTests.release.xcconfig"; sourceTree = "<group>"; };
-		434B662633E8995403097B03 /* Pods_TryLinkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TryLinkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F67BD5E33ABE5E1D6EAA965 /* Pods-TryLink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TryLink.release.xcconfig"; path = "Target Support Files/Pods-TryLink/Pods-TryLink.release.xcconfig"; sourceTree = "<group>"; };
-		CBAD707506C676DC7E4F0CE1 /* Pods-TryLink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TryLink.debug.xcconfig"; path = "Target Support Files/Pods-TryLink/Pods-TryLink.debug.xcconfig"; sourceTree = "<group>"; };
+		E906374528A3C95A00ACCF97 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E99AB58928A396EF00F2E294 /* TryLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TryLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E99AB58C28A396EF00F2E294 /* TryLinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryLinkApp.swift; sourceTree = "<group>"; };
 		E99AB58E28A396EF00F2E294 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A85ACCF1283908FD1C2A24DB /* Pods_TryLink.framework in Frameworks */,
+				E906374628A3C95A00ACCF97 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,29 +64,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53E94FB833F78C6FC7608626 /* Pods_TryLinkTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		38FFE4EE7C46992BA84A9732 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				CBAD707506C676DC7E4F0CE1 /* Pods-TryLink.debug.xcconfig */,
-				5F67BD5E33ABE5E1D6EAA965 /* Pods-TryLink.release.xcconfig */,
-				03EB5FC6FE2673C1E548FB0B /* Pods-TryLinkTests.debug.xcconfig */,
-				15BF12868A6A62D79757649B /* Pods-TryLinkTests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		6E6AD7D6B37C9780250B34FF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				040D7B2390B15CEB2B120C70 /* Pods_TryLink.framework */,
-				434B662633E8995403097B03 /* Pods_TryLinkTests.framework */,
+				E906374528A3C95A00ACCF97 /* RxSwift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -88,7 +84,6 @@
 				E99AB58B28A396EF00F2E294 /* TryLink */,
 				E99AB59C28A396F300F2E294 /* TryLinkTests */,
 				E99AB58A28A396EF00F2E294 /* Products */,
-				38FFE4EE7C46992BA84A9732 /* Pods */,
 				6E6AD7D6B37C9780250B34FF /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -136,10 +131,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E99AB5AD28A396F300F2E294 /* Build configuration list for PBXNativeTarget "TryLink" */;
 			buildPhases = (
-				A264E192530ECFF2A26FC8BE /* [CP] Check Pods Manifest.lock */,
 				E99AB58528A396EF00F2E294 /* Sources */,
 				E99AB58628A396EF00F2E294 /* Frameworks */,
 				E99AB58728A396EF00F2E294 /* Resources */,
+				E906374828A3C95A00ACCF97 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,7 +149,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E99AB5B028A396F300F2E294 /* Build configuration list for PBXNativeTarget "TryLinkTests" */;
 			buildPhases = (
-				72B97786C15F35FC7ADA5DD1 /* [CP] Check Pods Manifest.lock */,
 				E99AB59528A396F300F2E294 /* Sources */,
 				E99AB59628A396F300F2E294 /* Frameworks */,
 				E99AB59728A396F300F2E294 /* Resources */,
@@ -225,53 +219,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		72B97786C15F35FC7ADA5DD1 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TryLinkTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A264E192530ECFF2A26FC8BE /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TryLink-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E99AB58528A396EF00F2E294 /* Sources */ = {
@@ -426,7 +373,6 @@
 		};
 		E99AB5AE28A396F300F2E294 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CBAD707506C676DC7E4F0CE1 /* Pods-TryLink.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -456,7 +402,6 @@
 		};
 		E99AB5AF28A396F300F2E294 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F67BD5E33ABE5E1D6EAA965 /* Pods-TryLink.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -486,7 +431,6 @@
 		};
 		E99AB5B128A396F300F2E294 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03EB5FC6FE2673C1E548FB0B /* Pods-TryLinkTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -507,7 +451,6 @@
 		};
 		E99AB5B228A396F300F2E294 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 15BF12868A6A62D79757649B /* Pods-TryLinkTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
